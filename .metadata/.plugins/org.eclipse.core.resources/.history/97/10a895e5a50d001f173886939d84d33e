@@ -1,0 +1,24 @@
+package collection;
+
+import java.util.*;
+
+public class Sample3 {
+	public static void main(String [] args) {
+		//set	:순서가 없는 데이터 집합, 데이터의 중복을 허락하지 않는다.
+		//set역시 interface 이미로 implements가 된 class로 이용해야 한다.
+		//속도가 굉장히 빠름
+		//Hash: 되게 빠른 것
+		
+		Set s=new HashSet();
+		boolean result;
+		s.add("apple");
+		s.add("mango");
+		s.add("grape");
+		s.add("orange");
+		result=s.add("apple");
+		s.add(null);//toString 되서 표기됨
+		s.add("null");//가급적 테이터에 문자 null 입력 하지 말 것! 진짜 null인지 문자 null 알 수 없음
+		System.out.println(s);
+		System.out.println(result);
+	}
+}

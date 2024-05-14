@@ -1,0 +1,26 @@
+package collection;
+
+import java.util.*;
+
+public class Sample5 {
+	public static void main(String [] args) {
+		//List:순서엄격,중복허락
+		//Set:순서 없음, 중복불가
+		//Map:검색어(key)와 값(value)이 한 쌍으로 저장되는 방법
+		//	데이터의 검색이 편해서 개발에 이용하기 좋음.	*X5,000,000
+		//	순서는 존재하지 않고 Value는 중복이 가능하지만 key는 중복될 수 없다.
+		// 	속도가 현저히 떨어짐
+		// 	속도가 많이 떨어지지만 Hash를 붙여서 속도를 높여줌
+		
+ 		Map m=new HashMap();
+ 		//데이터를 넣을때 add가 아니라 map은 put!
+ 		m.put("A", 50);//A라고 검색 했을 때 값이 50
+ 		m.put("E", 1000);
+ 		m.put("B", 1000);
+ 		m.put("C", 2000);
+ 		m.put("C",1);
+ 		m.put("D",1);
+ 		m.put("F", 3);
+ 		System.out.println(m);
+	}
+}

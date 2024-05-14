@@ -1,0 +1,22 @@
+package collection;
+
+import java.util.*;
+
+public class Sample3 {
+	public static void main(String [] args) {
+		//set	:순서가 없는 데이터 집합, 데이터의 중복을 허락하지 않는다.
+		//set역시 interface 이미로 implements가 된 class로 이용해야 한다.
+		//속도가 굉장히 빠름
+		//Hash: 되게 빠른 것
+		
+		Set s=new HashSet();
+		s.add("apple");
+		s.add("mango");
+		s.add("grape");
+		s.add("orange");
+		s.add("apple");
+		s.add(null);
+		s.add("null");
+		System.out.println(s);
+	}
+}

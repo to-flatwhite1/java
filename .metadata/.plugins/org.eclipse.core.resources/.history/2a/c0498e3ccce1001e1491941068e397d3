@@ -1,0 +1,14 @@
+package condi;
+
+public class IF {
+	public static void main(String [] args) {
+		//조건문 if : 조건의 true, false여부에 따라 실행을 할지 말지 결정하는 문법
+		//if(조건){조건이 true일 경우 수행할 명령;}
+		//*5,000,000
+		int a=10;
+		if (a>10) {
+			System.out.println("조건이 참이므로 실행 합니다.");
+		}//if 끝
+	}//main 끝
+
+}//class 끝

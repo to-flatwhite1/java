@@ -1,0 +1,17 @@
+package collection;
+
+import java.util.*;
+
+public class Sample4 {
+	public static void main(String [] args) {
+		//LinkedHashSet:인접한 데이터간에 링크가 존재하는 방식
+		LinkedHashSet LHS=new LinkedHashSet();
+		LHS.add("A");
+		LHS.add("B");
+		LHS.add("C");
+		LHS.add("D");
+		LHS.add("E");
+		LHS.add("E");
+		System.out.println(LHS);//중복데이터는 추출안됨
+	}
+}
